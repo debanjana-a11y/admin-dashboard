@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.header {
+    display: grid;
+    grid-column: 2 / 3;
+    background-color: #188135;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.searchbar {
+    background-color: #FEFEFE;
+}
+
+.accounfInfo {
+    background-color: lightgreen;
+}
+
+.greetings {
+    background-color: rgb(6, 81, 81);
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: #25423B;
+}
+
+.main-content {
+    background-color: #E7F5F9;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+}
+
+.projects > p {
+    padding-left: 20px;
+    padding-top: 20px;
+    justify-self: flex-start;
+    align-self: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.all-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card {
+    margin: 20px;
+    background-color: white;
+}
+
+.card > p {
+    padding: 20px;
+}
+
+.announcementtrending {
+    margin: 20px;
+    row-gap: 20px;
+    display: grid;
+}
+
+.announcementtrending * p {
+    align-self: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+}
+
+.announcementtrending * div {
+    background-color: white;
+}
+
+.announcementDiv {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    background-color: #16a34a;
+}
+
+.trendingDiv {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    background-color: #16a34a;
+}
