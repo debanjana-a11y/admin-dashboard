@@ -34,6 +34,12 @@ html, body {
     border-radius: 20px;
     justify-self: center;
     align-self: center;
+    display: grid;
+}
+
+.search > img {
+    height: 30px;
+    align-self: center;
 }
 
 .accounfInfo {
@@ -196,23 +202,42 @@ html, body {
 
 .card {
     margin: 20px;
+    padding: 20px;
     background-color: white;
+    display: grid;
 }
 
-.card > p {
-    padding: 20px;
+/* .card::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: yellow;
+    transition: width 300ms linear;
+} */
+
+.project-settings {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.project-settings > img {
+    height: 20px;
+}
+
+.project-settings > img:hover {
+    cursor: pointer;
 }
 
 .announcementtrending {
     margin: 20px;
     row-gap: 20px;
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 240px 330px;
 }
 
-.announcementtrending * p {
+.announcementtrending * h2 {
     align-self: center;
-    font-weight: bold;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 10px;
 }
@@ -223,26 +248,30 @@ html, body {
 
 .announcementDiv {
     display: grid;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 40px 200px;
     background-color: #16a34a;
 }
 
 .announcement {
+    padding: 20px;
     display: grid;
+    row-gap: 10px;
 }
 
-.announcement  > div {
-    align-self: center;
+.announcement * h3 {
+    color: blue;
+    font-weight: normal;
+    cursor: pointer;
 }
 
 .trendingDiv {
     display: grid;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 40px 300px;
     background-color: #16a34a;
 }
 
 .trending {
-    padding-top: 10px;
+    padding: 20px;
     display: grid;
 }
 
@@ -254,6 +283,7 @@ html, body {
 
 .popularProfiles > span {
     align-self: center;
+    cursor: pointer;
 }
 
 .popularProfilePic {
