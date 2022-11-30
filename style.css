@@ -197,23 +197,34 @@ html, body {
 
 .all-projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 400px 400px;
 }
 
 .card {
     margin: 20px;
-    padding: 20px;
     background-color: white;
     display: grid;
 }
 
-/* .card::before {
+.project {
+    padding: 20px;
+    display: grid;
+}
+
+.card::before {
     content: "";
     position: absolute;
-    height: 100%;
-    background: yellow;
-    transition: width 300ms linear;
-} */
+    width: 350px;
+    height: 250px;
+    background: #65a30d;
+    transition: 400ms ease-in-out;
+    content: "";
+    position: absolute;
+}
+
+.card:hover::before{
+    width: 10px;
+}
 
 .project-settings {
     align-self: flex-end;
